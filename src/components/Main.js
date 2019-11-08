@@ -3,9 +3,11 @@ import Search from "./Search"
 import Display from "./Display"
 
 function Main() {
+	const [currentCity, setCurrentCity] = useState("Vancouver")
+
 	return (
 		<div>
-			<Search />
+			<Search currentCity={currentCity} />
 			<Display />
 		</div>
 	)	
