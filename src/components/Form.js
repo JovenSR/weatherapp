@@ -1,20 +1,19 @@
 import React from "react"
 
 function Form(props) {
-	
-	const { newCity, handleChange, handleSubmit } = props
+	const { newCity, handleChange, handleSubmit} = props
 	
 	return (
-		<form onSubmit={handleSubmit}>
+		<form className="form" onSubmit={handleSubmit}>
 			<div id="searchBar">
-				<b>Enter City:</b>
 				<input 
 					type="text"
 					name="city"
 					value={newCity}
 					onChange={handleChange}
+					placeholder="Enter City"
 				/>
-				<button id="formsubmit">Submit</button>
+				<button id="formsubmit">Search</button>
 			</div>
 		</form> 
 	)

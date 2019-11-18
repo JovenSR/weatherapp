@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import Form from "./Form"
 
 function Search(props) {
+
 	const { currentCity, newCity, setCurrentCity, setNewCity, composeData } = props
 
 	useEffect(() => {
@@ -17,10 +18,11 @@ function Search(props) {
 	function handleSubmit(event) {
 		event.preventDefault()
 		setCurrentCity(newCity)
+		setNewCity("")
 	}
 	
 	return (
-		<Form newCity={newCity} handleChange={handleChange} handleSubmit={handleSubmit} />
+		<Form newCity={newCity} handleChange={handleChange} handleSubmit={handleSubmit}/>
 	)
 }
 
