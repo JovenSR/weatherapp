@@ -20,7 +20,7 @@ function Main() {
 
 	const [errorLoad, setErrorLoad] = useState(false)
 	
-	const url = "//api.openweathermap.org/data/2.5/weather?q=" + currentCity + "&units=metric&APPID=e56d7df09eb193bb870fae23a23c925b"
+	const url = "https://api.openweathermap.org/data/2.5/weather?q=" + currentCity + "&units=metric&APPID=e56d7df09eb193bb870fae23a23c925b"
 
 	async function getData(url) {
 		try {
